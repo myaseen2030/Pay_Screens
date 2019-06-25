@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppyForLeaveActivity"
+    android:background="@color/background">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f1f1f1"
+        app:cardElevation="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        app:cardCornerRadius="0dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/back_icon"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="3"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="false"
+                android:layout_gravity="center_vertical"
+                android:progressTint="#FFC107"
+                android:progressDrawable="@drawable/rounded_progressbar"
+                android:progress="30"
+                android:max="100"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/home_icon"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply For Leave"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="You are Applying for annual leave"
+                android:textColor="@color/textColor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="60dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Start date"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/tvLeaveSD"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonborder"
+                    android:drawableLeft="@mipmap/calender_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="15dp"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Days"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonborder"
+                    android:drawableLeft="@mipmap/calender_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="15dp"
+                    android:textSize="14dp"
+                    android:hint="eg 11"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Days"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonborder"
+                    android:drawableLeft="@mipmap/calender_icon"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="15dp"
+                    android:textSize="14dp"
+                    android:hint="eg 11"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnMainLeave"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="Next, add a reason for your leave"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/round_button"
+                android:drawableRight="@drawable/ic_arrow_forward_white_24dp"
+                android:drawableTint="@color/colorWhite"
+                android:drawablePadding="10dp"
+                />
+
+            ></LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnMainLeave"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Next, add a reason for your leave"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="10sp"-->
+                <!--android:background="@drawable/round_button"-->
+                <!--android:drawableRight="@drawable/ic_arrow_forward_black_24dp"-->
+                <!--android:drawableTint="@color/colorWhite"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--/>-->
+
+            <!--&gt;</LinearLayout>-->
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

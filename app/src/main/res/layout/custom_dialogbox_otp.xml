@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100"
+    android:layout_margin="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/ivCross"
+            android:background="@drawable/rounded_iconback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_layout_otp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/a"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/rounded_messageicon"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <TextView
+                    android:id="@+id/txt_file_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANNOUNCEMENTS"
+                    android:textColor="#052749"
+                    android:textSize="11sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_white"
+                    android:drawableLeft="@mipmap/double_left"
+                    android:padding="10dp"
+                    android:text="Prev"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:textColor="#052749"
+                    android:textStyle="bold"
+                    android:drawablePadding="5dp"/>
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_white"
+                    android:drawableRight="@mipmap/double_right"
+                    android:padding="10dp"
+                    android:text="Next"
+                    android:textSize="13sp"
+                    android:drawablePadding="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#052749"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="Nationwide Holiday"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:gravity="right"
+                    android:text="1/3"
+                    android:textColor="#BFC6CD"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#66788A"
+                    android:textSize="13sp"
+                    android:text="@string/Paragraph1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvNotShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:text="Dont Show me again"
+                android:textColor="#052749"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Show more"
+                android:textColor="#1070CA"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

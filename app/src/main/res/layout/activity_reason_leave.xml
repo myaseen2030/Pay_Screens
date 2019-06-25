@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReasonLeaveActivity"
+    android:background="@color/background">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f1f1f1"
+        app:cardElevation="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        app:cardCornerRadius="0dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/back_icon"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="3"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="false"
+                android:layout_gravity="center_vertical"
+                android:progressTint="#FFC107"
+                android:progressDrawable="@drawable/rounded_progressbar"
+                android:progress="30"
+                android:max="100"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/home_icon"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainTopBar">
+
+        <ScrollView
+            android:id="@+id/scrollBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:layout_above="@id/llBottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply For Leave"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="You are Applying for annual leave from 23rd April,
+            \n2019 and resuming on 2nd May 2019."
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="What is your reason for applying for leave"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/tvLeaveSD"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/buttonborder"
+                            android:gravity="top"
+                            android:hint="Enter Your Reason eg I want to spend time \nWith my family"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="#EEECEC" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Attach proof/documentation for leave request"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnAttach1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dashed_border"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Attach File"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="#EEECEC" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Attach proof/documentation for leave request"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnAttach2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dashed_border"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Attach File"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnReasonLeave"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="Next, add proof/documentation"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/round_button"
+                android:drawableRight="@drawable/ic_arrow_forward_white_24dp"
+                android:drawableTint="@color/colorWhite"
+                android:drawablePadding="10dp"
+                />
+
+            ></LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

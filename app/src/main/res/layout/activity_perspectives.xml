@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PerspectivesActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f1f1f1"
+        app:cardElevation="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        app:cardCornerRadius="0dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/back_icon"
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Perspectives"
+                    android:textColor="#052749"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-Finance"
+                    android:layout_gravity="center"
+                    android:textColor="#052749"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/home_icon"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Increase Profitability"
+                        android:textColor="#052749"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approval Pending"
+                        android:background="@drawable/pending_approval_button"
+                        android:padding="10dp"
+                        android:textSize="11sp"
+                        android:textColor="#7E6514"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Entire Period"
+                        android:background="@drawable/entire_period_button"
+                        android:padding="10dp"
+                        android:textSize="11sp"
+                        android:textColor="#084B8A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type1"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/type_one_button"
+                        android:textColor="#37248F"
+                        android:padding="10dp"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_tv">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Target:"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/number_color"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#F7F9FA">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Actual:"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="120.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/number_color"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Actual % Score:"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/number_color"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#F7F9FA">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weight:"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/number_color"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_tv">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weight Score:"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="24.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/number_color"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/botttom_rounded_black">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Final Score:"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="start"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20.00"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_white"
+                        android:text="Add comment"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:textAllCaps="false"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <Button
+                        android:id="@+id/btnUpdateScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update Score"
+                        android:layout_alignParentRight="true"
+                        android:textAllCaps="false"
+                        android:background="@drawable/round_button"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#DDE5EB"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remarks"
+                            android:textColor="#052749"
+                            android:textStyle="bold"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_remarks_back"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:text="JO"
+                                android:background="@drawable/circle_jo"
+                                android:textColor="@android:color/white"
+                                android:padding="10dp"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:id="@+id/tvList"
+                                    android:text="Femisayo Olofintila"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#052749"
+                                    android:textSize="14sp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Product Manager/Line Manager"
+                                    android:textColor="#66788A"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Please update your score before monday
+                                15th May"
+                                android:textSize="14sp"
+                                android:textColor="#052749"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
