@@ -10,21 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="adjustPan|stateHidden">
-        <activity android:name=".PerformanceActiity"></activity>
-        <activity android:name=".PerspectivesActivity" />
-        <activity android:name=".HouseRentActivity" />
-        <activity android:name=".AnnualLeaveActivity" />
-        <activity android:name=".SelectOfficerActivity" />
-        <activity android:name=".ReasonLeaveActivity" />
-        <activity android:name=".AppyForLeaveActivity">
+        <activity android:name=".GridViewPerformanceActivity"></activity>
+        <activity android:name=".PerformanceActiity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PerspectivesActivity" />
+        <activity android:name=".HouseRentActivity" />
+        <activity android:name=".AnnualLeaveActivity" />
+        <activity android:name=".SelectOfficerActivity" />
+        <activity android:name=".ReasonLeaveActivity" />
+        <activity android:name=".AppyForLeaveActivity"></activity>
         <activity android:name=".AnnouncementActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
