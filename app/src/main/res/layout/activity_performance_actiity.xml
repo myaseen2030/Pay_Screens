@@ -162,12 +162,6 @@
                        >
                    </com.example.pay.NonScrollListView>
 
-                        <!--<ListView-->
-                            <!--android:id="@+id/lvPerItems"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="600dp"-->
-                            <!--android:divider="@null"></ListView>-->
-
                     </LinearLayout>
 
 
@@ -223,12 +217,6 @@
                             android:divider="@null">
                         </com.example.pay.NonScrollListView>
 
-                        <!--<ListView-->
-                            <!--android:id="@+id/lvLearnItems"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="600dp"-->
-                            <!--android:divider="@null"></ListView>-->
-
                     </LinearLayout>
 
 
@@ -283,12 +271,6 @@
                             android:divider="@null">
                         </com.example.pay.NonScrollListView>
 
-                        <!--<ListView-->
-                            <!--android:id="@+id/lvOrgItems"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="600dp"-->
-                            <!--android:divider="@null"></ListView>-->
-
                     </LinearLayout>
 
 
@@ -342,12 +324,6 @@
                             android:layout_height="wrap_content"
                             android:divider="@null">
                         </com.example.pay.NonScrollListView>
-                        <!--<ListView-->
-                            <!--android:id="@+id/lvCusItems"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="600dp"-->
-                            <!--android:divider="@null"></ListView>-->
-
                     </LinearLayout>
 
 

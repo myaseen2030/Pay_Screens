@@ -10,13 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="adjustPan|stateHidden">
-        <activity android:name=".GridViewPerformanceActivity"></activity>
-        <activity android:name=".PerformanceActiity">
+        <activity android:name=".GridViewPerformanceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".PerformanceActiity">
+
         </activity>
         <activity android:name=".PerspectivesActivity" />
         <activity android:name=".HouseRentActivity" />

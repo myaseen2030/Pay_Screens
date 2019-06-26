@@ -19,8 +19,8 @@ import java.util.ArrayList;
 public class PerformanceActiity extends AppCompatActivity {
 
     ListView perItems, learnItems, orgItems, cusItems;
-    ArrayList<User> perNames;
-    FinanceAdapter perItemAdapter;
+    ArrayList<User> perNames, learnNames, cusNames;
+    FinanceAdapter perItemAdapter, learnItemAdapter, cusItemAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +55,13 @@ public class PerformanceActiity extends AppCompatActivity {
         perNames.add(item3);
         perNames.add(item4);
 
-        ArrayList<User> learnNames = new ArrayList<>();
+        learnNames = new ArrayList<>();
         learnNames.add(learnItem1);
         learnNames.add(learnItem2);
         learnNames.add(learnItem3);
         learnNames.add(learnItem4);
 
-        ArrayList<User> cusNames = new ArrayList<>();
+        cusNames = new ArrayList<>();
         cusNames.add(cusItem1);
         cusNames.add(cusItem2);
         cusNames.add(cusItem3);
@@ -70,11 +70,11 @@ public class PerformanceActiity extends AppCompatActivity {
         perItemAdapter = new FinanceAdapter(this,R.layout.performance_list_view,perNames);
         perItems.setAdapter(perItemAdapter);
 
-        FinanceAdapter learnItemAdapter = new FinanceAdapter(this,R.layout.performance_list_view,learnNames);
+        learnItemAdapter = new FinanceAdapter(this,R.layout.performance_list_view,learnNames);
         learnItems.setAdapter(learnItemAdapter);
         orgItems.setAdapter(learnItemAdapter);
 
-        FinanceAdapter cusItemAdapter = new FinanceAdapter(this,R.layout.performance_list_view,cusNames);
+        cusItemAdapter = new FinanceAdapter(this,R.layout.performance_list_view,cusNames);
         cusItems.setAdapter(cusItemAdapter);
     }
 }
